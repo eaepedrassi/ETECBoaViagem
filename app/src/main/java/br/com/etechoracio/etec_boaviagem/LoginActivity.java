@@ -25,11 +25,8 @@ public class LoginActivity extends AppCompatActivity {
 
     public void onEntrar(View view) {
         if (editUsuario.getText().toString().equals("admin") && editSenha.getText().toString().equals("admin")) {
-            Toast aviso = Toast.makeText(this, "Carregando...", Toast.LENGTH_SHORT);
-            aviso.show();
-
-            Intent intlogin = new Intent(this,MenuActivity.class);
-            startActivity(intlogin);
+            Intent int1 = new Intent(this,MenuActivity.class);
+            startActivity(int1);
 
         } else {
             Toast aviso = Toast.makeText(this, "Usuário e/ou senha inválidos", Toast.LENGTH_SHORT);

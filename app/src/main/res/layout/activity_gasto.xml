@@ -72,11 +72,11 @@
                     android:inputType="numberDecimal" />
 
                 <Button
-                    android:id="@+id/button"
-                    android:layout_width="180dp"
+                    android:id="@+id/btnData"
+                    android:layout_width="191dp"
                     android:layout_height="wrap_content"
-                    android:text="__/__/____" />
-
+                    android:onClick="onSelecionarDataGasto"
+                    android:text="@string/mascara" />
             </TableRow>
 
             <TextView

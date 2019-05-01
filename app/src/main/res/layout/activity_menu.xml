@@ -25,7 +25,7 @@
             android:layout_marginLeft="50dp"
             android:layout_marginTop="80dp"
             android:drawableTop="@drawable/novo_gasto"
-            android:onClick="onSelecionarOpoao"
+            android:onClick="onSelecionaropcao"
             android:text="@string/novoGasto" />
 
         <TextView
@@ -37,7 +37,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginRight="50dp"
             android:drawableTop="@drawable/nova_viagem"
-            android:onClick="onSelecionarOpoao"
+            android:onClick="onSelecionaropcao"
             android:text="@string/novaViagem" />
 
         <TextView
@@ -49,7 +49,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="120dp"
             android:drawableTop="@drawable/minhas_viagens"
-            android:onClick="onSelecionarOpoao"
+            android:onClick="onSelecionaropcao"
             android:text="@string/minhasViagens" />
 
         <TextView
@@ -58,10 +58,11 @@
             android:layout_height="wrap_content"
             android:layout_alignRight="@+id/viewNovaViagem"
             android:layout_alignBottom="@+id/viewMinhasViagens"
+            android:onClick="onSelecionaropcao"
             android:text="@string/config"
             style="@style/ItemMenu"
             android:drawableTop="@drawable/configuracoes"
-            android:onClick="onSelecionarOpoao"
+
             />
 
 

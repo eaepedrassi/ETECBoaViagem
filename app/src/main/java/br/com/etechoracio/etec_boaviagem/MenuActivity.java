@@ -14,19 +14,26 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
     }
 
-    public void onSelecionarOpoao(View view) {
-        Toast aviso1 = Toast.makeText(this, "Em desenvolvimento...", Toast.LENGTH_SHORT);
-        switch (view.getId()) {
+    public void onSelecionaropcao(View view){
+        switch (view.getId()){
             case R.id.viewNovaViagem:
-                Intent intnovaviagem = new Intent(this, ViagemActivity.class);
-                startActivity(intnovaviagem);
+                Intent int2 = new Intent(this,ViagemActivity.class);
+                startActivity(int2);
+                break;
+
             case R.id.viewNovoGasto:
-                Intent intnovogasto = new Intent(this, GastoActivity.class);
-                startActivity(intnovogasto);
-            case R.id.viewConfig:
-                aviso1.show();
+                Intent int3 = new Intent(this,GastoActivity.class);
+                startActivity(int3);
+                break;
+
             case R.id.viewMinhasViagens:
-                aviso1.show();
+                Toast aviso = Toast.makeText(this, "Em Desenvolvimento", Toast.LENGTH_SHORT);
+                aviso.show();
+                break;
+
+            case R.id.viewConfig:
+                Toast aviso2 = Toast.makeText(this, "Em Desenvolvimento", Toast.LENGTH_SHORT);
+                aviso2.show();
         }
     }
 }
